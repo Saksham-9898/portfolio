@@ -14,7 +14,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Tech Stack</a></li>
           
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -30,7 +30,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Tech Stack</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
 
@@ -41,28 +41,22 @@
         <ul class="menu-links">
           <li style="--index: 0"><a href="#profile">Profile</a></li>
           <li style="--index: 1"><a href="#about">About</a></li>
-          <li style="--index: 2"><a href="#experience">Experience</a></li>
-          <!-- <li style="--index: 3"><a href="#projects">Projects</a></li> -->
+          <li style="--index: 2"><a href="#experience">Tech Stack</a></li>
           <li style="--index: 4"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Saksham Sharma's  profile picture" />
+        <img src="./assets/Profile.jpg" alt="Saksham Sharma's  profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">SAKSHAM SHARMA</h1>
         <p class="section__text__p2">1st Year B.Tech student at<br>
-           NEWTON SCHOOL OF TECHNOLOGY</p>
+           <u>NEWTON SCHOOL OF TECHNOLOGY</u></p>
         <div class="btn-container">
-          <!-- <button
-            class="btn btn-color-2"
-            onclick="window.open()"
-          >
-            Download CV
-          </button> -->
+          
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
@@ -72,7 +66,7 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/saksham-sharma-14a89b323/'"
+            onclick="location.href='https://www.linkedin.com/in/saksham-sharma-14a89b323/'"            
           />
           <img
             src="./assets/github.png"
@@ -80,36 +74,78 @@
             class="icon"
             onclick="location.href='https://github.com/'"
           />
+
+          <img
+            src="./assets/leetcode-icon-430x512-6l72chsk.png"
+            alt="My LeetCode profile"
+            class="icon"
+            onclick="location.href='https://leetcode.com/u/saksham___2005/'"
+          />
+          
+          <img
+            src="./assets/codechef-icon-380x512-r1v87w22.png"
+            alt="My CodeChef profile"
+            class="icon"
+            onclick="location.href='https://www.codechef.com/users/saksham_2005'"
+          />
         </div>
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <!-- <p class="section__text__p1">Get To Know More</p> -->
       <h1 class="title">About Me</h1>
-      <p class="big"> I am a first-year B.Tech student majoring in Computer Science and Artificial Intelligence, eager to explore the ever-evolving world of technology. With a strong foundation in programming languages like Python , I am enthusiastic about diving into areas like artificial intelligence, machine learning, and software development. My goal is to leverage my technical skills to solve real-world problems and contribute to innovative projects. I am always looking to learn, grow, and connect with professionals and peers who share a passion for technology and innovation.</p>
-      <br>
-      <br>
+      <div class="about-para">
+        <p class="big"> I am a first-year B.Tech student majoring in <b><u>Computer Science</u></b> and <b><u>Artificial Intelligence</u></b>, eager to explore the ever-evolving world of technology.</p><br> 
+        <p class = "big">With a strong foundation in programming languages mainly <b><u>Python</u></b> </p><br>
+        <p class = "big">I am enthusiastic about diving into areas like <b><u>Artificial Intelligence</u> , <u>  Machine Learning</u></b> and <b><u>Software Development.</u></b></p><br>
+        <p class = "big">My goal is to leverage my technical skills to solve real-world problems and contribute to innovative projects.</p><br>
+        <p class = "big">I am always eager to learn, grow, and connect with professionals and peers who share a passion for technology and innovation.</p><br>
+      </div>
       <div class="section-container">
         
         <div class="about-details-container">
+          <h1 class="title">Education</h1>
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years<br/>Frontend Development</p>
-            </div>
-            <div class="details-container">
+            
+             <div class="details-container details-container-left">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
-              <h3>Education</h3>
-              <p>Maticulation<br />Higher Secondary</p>
+              <h3>Pragati Vidya Peeth </h3>
+              <br>
+              <p>(Gwalior, MP)</p>
+              <br>
+              <br>
+              <hr>
+              <br>
+              <h4>Matriculation</h4><p>(2021)</p>
+              <br>
+              
+              <h4>Higher Secondary</h4><p>(2023)</p>
+              
+              <br>
+              <!-- <p>Matriculation (2021)</p>
+              <p>Higher Secondary(2023)</p> -->
+            </div>
+            <div class="details-container details-container-right">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Newton School of Technology</h3>
+              <br>
+              <p>(Delhi, NCR)</p>
+              <p></p>
+              <br>
+              <hr>
+              <br>
+              <br>
+              <h4>B.Tech in CS & AI </h4>
+              <p>Expected in 2028</p>
+
             </div>
           </div>
           <div class="text-container">
@@ -128,12 +164,12 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <p class="section__text__p1"></p>
+      <h1 class="title">Tech Stack</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="details-container details-container-left">
+            <h2 class="experience-sub-title"><u>Software Development Languages:</u></h2>
             <div class="article-container">
               <article>
                 <img
@@ -143,7 +179,7 @@
                 />
                 <div>
                   <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <p>Proeficient</p>
                 </div>
               </article>
               <article>
@@ -154,14 +190,36 @@
                 />
                 <div>
                   <h3>CSS</h3>
-                  <p>Experienced</p>
+                  <p>Proeficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React. JS</h3>
+                  <p>Beginner</p>
                 </div>
               </article>
               
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="details-container details-container-right">
+            <h2 class="experience-sub-title"><u> Programing Language: </u></h2>
              <div class="article-container">
              
               </article>
@@ -172,19 +230,19 @@
                   class="icon"
                 />
                 <div>
-                  <h3>React. JS</h3>
-                  <p>Basic</p>
+                  <h3>Python</h3>
+                  <p>Proeficient</p>
                 </div>
               </article>
               <article>
-                <img
+                <!-- <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
-                />
+                /> -->
                 <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <h3></h3>
+                  <p></p>
                 </div>
               </article>
             </div>
@@ -192,14 +250,14 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="./assets/arrow final .png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#desktop-nav'"
       />
 
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+      <p class="section__text__p1"></p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -217,6 +275,14 @@
             class="icon contact-icon"
           />
           <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/pngwing.com (1).png"
+            alt="Instagram icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://www.instagram.com/_saksham_.0007?igsh=cDR0azF6Y29tZGJ4">Instagram</a></p>
         </div>
       </div>
     </section>
